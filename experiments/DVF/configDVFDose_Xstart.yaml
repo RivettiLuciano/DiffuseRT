@@ -1,0 +1,9 @@
+data_set : DVFDataset
+image_in_channels : 3
+out_channels : 3
+predict_xstart : True
+constrain_variance_fraction : True
+sample_fractions : [3, 9, 26, 30]
+validation_experiment_name : Model230000
+FID_reference_patients : validation
+logging_path : /data1/DiffuseRTData/DVFDoseWithXstart

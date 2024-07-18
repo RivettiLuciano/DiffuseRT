@@ -1,0 +1,13 @@
+load_fraction_time : True
+mix_fraction_times : 4
+out_channels : 2
+predict_dvf : True
+constrain_variance_fraction : True
+use_scale_shift_norm : False
+scaleFractionShiftDiffStepEncoded : True
+num_samples_per_image : 100
+sample_fractions : 3
+validation_experiment_name : ManySamples100
+timestep_respacing_validation : "200"
+logging_path : /data1/DiffuseRTData/DVFPredicted_XstartTimeEncodedMixedConditionals4days
+# sampling_image_size : [128,128,96]

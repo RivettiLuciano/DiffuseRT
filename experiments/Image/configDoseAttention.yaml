@@ -1,0 +1,16 @@
+### Config parameters
+
+### Data
+scale_dose_with_time: True
+
+### Model
+attention_resolutions : "8"
+
+### Diffusion
+
+### Training 
+
+### Logging
+logging_path: /data1/DiffuseRTData/ImageDoseAttention
+
+### Sampling 

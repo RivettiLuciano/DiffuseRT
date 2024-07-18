@@ -1,0 +1,16 @@
+
+# Potential code bases:
+
+# For video's, also based on 3D convolutions
+# https://github.com/lucidrains/video-diffusion-pytorch/blob/main/video_diffusion_pytorch/video_diffusion_pytorch.py
+
+# For 3D medical data (I think a latent diffusion model)
+# https://github.com/FirasGit/medicaldiffusion/blob/master/vq_gan_3d/model/vqgan.py 
+
+# Many researchers rely on this one, but it is in 2D. 
+# https://github.com/openai/improved-diffusion 
+
+
+# Reading papers:
+# Sequence aware diffusion model (June 2023)
+# https://arxiv.org/pdf/2212.08228.pdf 

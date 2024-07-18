@@ -1,0 +1,30 @@
+{
+    "training" :    [
+                        "HN_03",
+                        "HN_04",
+                        "HN_07",
+                        "HN_13",
+                        "HN_06",
+                        "HN_08",
+                        "HN_35",
+                        "HN_33",
+                        "HN_30"
+                    ],
+    "validation" :  [
+                        "HN_15",
+                        "HN_24",
+                        "HN_05",
+                        "HN_11",
+                        "HN_01"
+                    ],
+    "testing" :     [
+                    ],
+    "validationAndTesting" :  
+                    [
+                        "HN_05",
+                        "HN_11",
+                        "HN_15",
+                        "HN_24",
+                        "HN_01"
+                    ]
+}

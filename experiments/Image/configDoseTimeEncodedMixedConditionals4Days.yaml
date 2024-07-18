@@ -1,0 +1,11 @@
+mix_fraction_times : 4
+load_fraction_time : True
+use_scale_shift_norm : False
+scaleFractionShiftDiffStepEncoded : True
+normalize_xstart_while_denoising : True
+num_samples_per_image : 100
+sample_fractions : 3
+validation_experiment_name : ManySamples100
+timestep_respacing_validation : "200"
+logging_path : /data1/DiffuseRTData/ImageDoseTimeEncodedMixedConditionals4Days
+# sampling_image_size : [128,128,96]

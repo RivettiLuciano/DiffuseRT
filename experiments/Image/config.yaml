@@ -1,0 +1,5 @@
+include_dose : False
+cond_in_channels : 1
+timestep_respacing : 200
+logging_path : /data1/DiffuseRTData/FirstRun
+model_for_sampling : ema_0.9999_170000.pt

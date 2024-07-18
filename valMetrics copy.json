@@ -1,0 +1,27 @@
+{
+    "fractionMetrics": {    
+                        "segmentationMetrics" :
+                        {
+                            "volume" : 
+                            [
+                                "Esophagus",
+                                "Body",
+                                "CTV_5940"
+                            ],
+                            "centerOfMassShift" :
+                            [
+                                "Body",
+                                "SpinalCord",
+                                "CTV_5940"
+                            ]
+                        },
+                        "metrics" : ["MSE"]
+                        },
+    "modelMetrics" : 
+        [  
+            "KL_Divergence",
+            "inDistribution",
+            "FID",
+            "vlb"
+        ]
+}

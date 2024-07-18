@@ -1,0 +1,10 @@
+load_fraction_time : True
+timestep_respacing : 200
+scaleAndShifFractionEncoded : True
+microbatch : 1
+validation_experiment_name : Model100000
+timestep_respacing_validation : 200
+normalize_xstart_while_denoising : True
+FID_reference_patients : validation
+resume_checkpoint : /data1/DiffuseRTData/ImageDoseTimeEncodedInput/model050000.pt
+logging_path : /data1/DiffuseRTData/ImageDoseTimeEncodedInput

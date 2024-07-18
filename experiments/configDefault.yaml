@@ -1,0 +1,89 @@
+### Config parameters
+
+### Data
+data_dir : "/home/luciano/ResearchData/DataSets/DL-DIR/DataSet/DeepMovement"
+mappingFile : "/home/luciano/ResearchData/DataSets/DL-DIR/DataSet/DeepMovement/Mapping_CBCT.csv"
+valJsonDir : "/home/luciano/Codes/DiffuseRT/valMetrics.json"
+data_set : ImageDataset
+image_size : 96
+sampling_interval : 0
+data_spliting: "dataSpliting.json"
+conditional_mode : planning
+mix_fraction_times : 0
+include_dose: True
+scale_dose_with_time: False
+load_fraction_time: False
+scale_image_with_conditional_mean : False
+modality : CBCT
+
+### Model
+cond_in_channels : 2
+image_in_channels : 1
+out_channels : 1
+num_channels : 32
+num_res_blocks : 2
+channel_mult : [1, 2, 4, 8]
+num_heads : 8
+num_heads_upsample : -1
+attention_resolutions : "8,4,2"
+dropout : 0.0
+learn_sigma : True
+sigma_small : False
+class_cond : False
+fraction_embed_multiplier : 1
+fraction_embed_max_period : 100
+
+### Diffusion
+diffusion_steps : 1000
+noise_schedule : "cosine"
+timestep_respacing : ""
+use_kl : False
+predict_xstart : False
+rescale_timesteps : True
+rescale_learned_sigmas : True
+use_checkpoint : False
+constrain_variance_fraction: False
+use_scale_shift_norm : True
+scaleFractionShiftDiffStepEncoded : False
+scaleAndShifFractionEncoded: False
+predict_dvf: False
+bending_energy_coefficient: 1.0
+
+### Training 
+gpu_number : 1
+schedule_sampler : "uniform"
+lr : 0.0001
+weight_decay : 0.0
+lr_anneal_steps : 0
+batch_size : 2
+microbatch : -1  # -1 disables microbatches
+use_fp16 : False
+fp16_scale_growth : 0.001
+shuffle_data : True
+num_workers : 2
+
+### Sampling 
+clip_denoised : True
+normalize_xstart_while_denoising : False
+num_samples_per_image : 1
+use_ddim : False
+model_for_sampling : "last"
+save_conditional : "first"
+sample_fractions: "all"
+sampling_image_size: [96,96,96]
+
+### Validation
+validation_mode: validation
+validation_metrics: ['FID']
+FID_reference_processed_path: /home/luciano/ResearchData/DataSets/DiffuseRTData/FIDData/FIDData
+timestep_respacing_validation : ""
+FID_reference_patients: training
+FID_sample_patients: validation
+
+
+### Logging
+ema_rate : "0.9999"  # comma-separated list of EMA values
+log_interval : 10
+save_interval : 10000
+resume_checkpoint : ""
+

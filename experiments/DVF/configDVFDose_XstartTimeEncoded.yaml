@@ -1,0 +1,14 @@
+data_set : DVFDataset
+load_fraction_time : True
+image_in_channels : 3
+out_channels : 3
+predict_xstart : True
+constrain_variance_fraction : True
+use_scale_shift_norm : False
+scaleFractionShiftDiffStepEncoded : True
+num_samples_per_image : 100
+sample_fractions : 3
+timestep_respacing_validation : "200"
+logging_path : /data1/DiffuseRTData/DVFDoseWithXstartTimeEncoded
+# sampling_image_size : [128,128,96]
+validation_experiment_name : ManySamples100

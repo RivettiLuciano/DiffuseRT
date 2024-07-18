@@ -1,0 +1,9 @@
+data_set : DVFDataset
+include_dose : False
+cond_in_channels : 1
+image_in_channels : 3
+out_channels : 3
+lr : 5e-05
+save_interval : 2000
+logging_path : /data1/DiffuseRTData/DVFDirect
+num_samples_per_image : 5

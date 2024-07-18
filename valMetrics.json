@@ -1,0 +1,27 @@
+{
+    "fractionMetrics": {    
+                        "segmentationMetrics" :
+                        {
+                            "volume" : 
+                            [
+                                "Parotid_L",
+                                "Parotid_R",
+                                "Esophagus",
+                                "Body"
+                            ],
+                            "centerOfMassShift" :
+                            [
+                                "Parotid_L",
+                                "Parotid_R",
+                                "Esophagus",
+                                "Body"
+                            ]
+                        },
+                        "metrics" : [""]
+                        },
+    "modelMetrics" : 
+        [  
+            "KL_Divergence",
+            "inDistribution"
+        ]
+}

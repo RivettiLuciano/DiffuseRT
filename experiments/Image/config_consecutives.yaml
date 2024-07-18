@@ -1,0 +1,6 @@
+### Config parameters
+
+sampling_interval : 3
+include_dose : False
+cond_in_channels : 3
+logging_path : /data1/DiffuseRTData/FirstRun_consecutive

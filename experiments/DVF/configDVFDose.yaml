@@ -1,0 +1,9 @@
+data_set : DVFDataset
+image_in_channels : 3
+out_channels : 3
+predict_xstart : True
+logging_path : /data1/DiffuseRTData/DVFDoseNoWeightedXStart
+validation_experiment_name : Model90000
+FID_reference_patients : validation
+sampling_mode : validation
+num_samples_per_image : 3

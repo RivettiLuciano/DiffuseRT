@@ -1,0 +1,10 @@
+### Config parameters
+
+scale_dose_with_time : True
+timestep_respacing : 200
+resume_checkpoint : /home/luciano/ResearchData/DataSets/DiffuseRTData/ImageDose/model250000.pt
+logging_path : /data1/DiffuseRTData/ImageDose
+validation_experiment_name : Model250000
+validation_metrics : ['vlb']
+sampling_mode : validation
+model_for_sampling : ema_0.9999_250000.pt

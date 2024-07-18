@@ -1,0 +1,9 @@
+predict_xstart : True
+constrain_variance_fraction : True
+use_scale_shift_norm : False
+scaleFractionShiftDiffStepEncoded : True
+logging_path : /data1/DiffuseRTData/ImageDoseXstartNoScaledWithDose
+validation_experiment_name : Model90000
+FID_reference_patients : validation
+sampling_mode : validation
+num_samples_per_image : 3
