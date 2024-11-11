@@ -600,7 +600,7 @@ def propagateStructures(patientSequence, segmentationList, dataDir, imageSize, o
     logger.log("The propagation is finished...")
     
 
-def calculateDivergence(sampledSequences, realizationSequence, divergence, binNumber = 30):
+def calculateDivergence(sampledSequences, realizationSequence, divergence):
     Min = {}
     Max = {}
     for sampledSequence in sampledSequences:        
@@ -620,9 +620,7 @@ def calculateDivergence(sampledSequences, realizationSequence, divergence, binNu
                 sampleDist.extend(metricValues)
             Min_metric = Min[metricName]
             Max_metric = Max[metricName]
-            realizationDist, _ = np.histogram((realizationDist - Min_metric)/(Max_metric-Min_metric), bins=binNumber, range=(0,1), density = True)
-            sampleDist, _ = np.histogram((sampleDist - Min_metric)/(Max_metric-Min_metric), bins=binNumber, range=(0,1), density = True)
-            Metrics['KL_'+metricName] = divergence(realizationDist, sampleDist)
+            Metrics['KL_'+metricName] = divergence((realizationDist - Min_metric)/(Max_metric-Min_metric), (sampleDist - Min_metric)/(Max_metric-Min_metric))
         MetricsList.append(Metrics)
     return MetricsList
 
